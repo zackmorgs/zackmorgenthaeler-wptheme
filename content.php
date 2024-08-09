@@ -12,6 +12,9 @@
             </a>
         </p>
     </header>
+    <div class="post-excerpt">
+        <?php the_excerpt(); ?>
+    </div>
     <div class="post-content">
         <?php if (has_post_thumbnail()) { ?>
             <div class="post-thumbnail">
@@ -21,3 +24,8 @@
         <?php the_content(); ?>
     </div>
 </article>
+<div id="comments">
+    <?php if (comments_open() || get_comments_number()) {
+        comments_template();
+    } ?>
+</div>
