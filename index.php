@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <?php get_header(); ?>
+    <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <header>
         <h1>
             <a href="<?php echo home_url('/'); ?>">
