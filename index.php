@@ -2,8 +2,8 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-    <?php get_header(); ?>
     <?php wp_head(); ?>
+    <?php get_header(); ?>
 </head>
 
 <body <?php body_class(); ?>>
